@@ -1,0 +1,28 @@
+{
+  "name": "redux-sandbox",
+  "version": "1.0.0",
+  "description": "Redux Sandbox",
+  "main": "src/app.js",
+  "scripts": {
+    "copy:static": "cp -r src/public/ build/",
+    "build": "npm run copy:static && webpack",
+    "start": "npm run copy:static && webpack-dev-server --content-base build/"
+  },
+  "author": "Will Bamford",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "redux-devtools": "^3.3.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
